@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>Dogs</title>
+        <link rel="stylesheet" href="/stylesheets/dogs.css" />
     </head>
     <body>
         <h1>Available Dogs</h1>
         <% @dogs.each do |dog| %>
         <ul>
         <%= "#{dog.name}: #{dog.age} years old" %><br>
-        <img style="width: 500px;" src=<%= dog.img_url %>>
+        <img style="width: 400px;" src=<%= dog.img_url %>>
         <% end %>
         </ul>
     </body>
