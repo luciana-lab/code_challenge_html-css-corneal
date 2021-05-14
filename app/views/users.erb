@@ -7,8 +7,11 @@
         <h2>Dog's Owners</h2>
         <% @users.each do |user| %>
         <ul>
-        <%= user.name %>
-        </ul>
+        <%= "#{user.name} my dog's name is" %>
+        <% user.dogs.each do |dog| %>
+        <%= dog.name %>
         <% end %>
+        <% end %>
+        </ul>
     </body>
 </html>

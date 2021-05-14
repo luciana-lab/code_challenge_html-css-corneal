@@ -7,8 +7,9 @@
         <h1>Available Dogs</h1>
         <% @dogs.each do |dog| %>
         <ul>
-        <%= "#{dog.name}: #{dog.age} years old" %>
-        </ul>
+        <%= "#{dog.name}: #{dog.age} years old" %><br>
+        <img style="width: 500px;" src=<%= dog.img_url %>>
         <% end %>
+        </ul>
     </body>
 </html>
