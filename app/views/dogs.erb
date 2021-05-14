@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dogs</title>
+    </head>
+    <body>
+        <h1>Available Dogs</h1>
+        <% @dogs.each do |dog| %>
+        <ul>
+        <%= "#{dog.name}: #{dog.age} years old" %>
+        </ul>
+        <% end %>
+    </body>
+</html>

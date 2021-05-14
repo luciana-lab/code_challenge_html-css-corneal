@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Owners</title>
+    </head>
+    <body>
+        <h2>Dog's Owners</h2>
+        <% @users.each do |user| %>
+        <ul>
+        <%= user.name %>
+        </ul>
+        <% end %>
+    </body>
+</html>

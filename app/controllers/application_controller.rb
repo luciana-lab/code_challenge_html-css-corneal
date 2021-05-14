@@ -11,4 +11,14 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
+  get '/dogs' do
+    @dogs = Dog.all
+    erb :dogs
+  end
+
+  get '/users' do
+    @users = User.all
+    erb :users
+  end
+
 end
